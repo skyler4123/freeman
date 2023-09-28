@@ -1,4 +1,3 @@
-import { jsPDF } from "jspdf";
 import { Controller } from "@hotwired/stimulus";
 
 export default class extends Controller {
@@ -9,7 +8,7 @@ export default class extends Controller {
   }
 
   generate() {
-    var doc = new jsPDF("p", "mm", [500, 300])
-    doc.html(this.pdfContentTarget).then(() => doc.save("output.pdf"))
+    // var doc = new jsPDF("p", "mm", [500, 300])
+    // doc.html(this.pdfContentTarget).then(() => doc.save("output.pdf"))
   }
 }

@@ -6,7 +6,7 @@ export default class extends Controller {
     demo: {type: String, default: "hahahah"}
   }
   connect() {
-    // console.log("Hello, Stimulus!", this.element);
+    console.log("Hello, Stimulus!", this.element);
   }
   initialize() {
     // console.log(this.demoValue)

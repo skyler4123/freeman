@@ -6,7 +6,7 @@ image: pkphung2001/freeman
 
 # Deploy to these servers.
 servers:
-  - 159.223.43.244
+  - 54.255.222.124
 
 # Credentials for your image host.
 registry:
@@ -31,8 +31,9 @@ env:
     - DB_PORT
 
 # Use a different ssh user than root
-# ssh:
-#   user: app
+ssh:
+  user: ubuntu
+  proxy: "ubuntu@54.255.222.124"
 
 # Configure builder setup.
 # builder:
